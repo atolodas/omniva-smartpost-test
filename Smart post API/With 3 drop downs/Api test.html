@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Page Title</title>
+		<meta charset="utf-8">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<script src="script.js"></script>
+		<script src="http://www.smartpost.ee/places.js"></script>
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		
+		<!-- Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>		
+	</head>
+	<body>
+		<div class="container test">
+			<div class="row"></div>
+			<div class="row">
+				<div class="col-md-1">
+				<img src="http://ehshirts.com/wp-content/uploads/2013/12/Itella_smartpost_2_RGB2.png" class="img-responsive">
+				</div>
+				<div class="col-md-2">
+					<button onclick="CallURL()">Click me to start!</button>
+				</div>
+				<div class= "col-md-2">
+					<select id="location_filter" onchange="populateCity(this.id,'city_filter')" class="form-control"></select>
+				</div>
+				<div class= "col-md-2">
+					<select id="city_filter" onchange="populateAddress(this.id,'address_filter')"class="form-control"></select>
+				</div>
+				<div class= "col-md-3">
+					<select id="address_filter" class="form-control"></select>
+				</div>
+			</div>
+	</body>
+</html>
